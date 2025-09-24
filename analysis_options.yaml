@@ -21,6 +21,17 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
+    always_use_package_imports: true  # Bắt buộc import theo dạng package:project_name/... thay vì import relative (../), giúp code rõ ràng, tránh lỗi vòng lặp import, dễ tái cấu trúc.
+    prefer_const_constructors: true   # Nhắc dùng const cho widget/constructor khi có thể (ví dụ const Text("Hello")), giúp tối ưu performance vì widget không rebuild lại khi không thay đổi.
+    avoid_print: true                 # Không dùng print, thay bằng logger (vd: debugPrint, logger), giúp code chuyên nghiệp hơn.
+    prefer_final_locals: true         # Dùng final cho biến cục bộ nếu không thay đổi, tránh gán nhầm.
+    unnecessary_this: true            # Bỏ this. khi không cần, làm code gọn.
+    use_key_in_widget_constructors: true  # Bắt buộc thêm Key? key vào widget custom, giúp Flutter quản lý widget tree chính xác.
+    prefer_const_literals_to_create_immutables: true  # Dùng const [], const {} nếu list/map/set không thay đổi, tối ưu performance.
+    sort_child_properties_last: true    # Đặt thuộc tính child cuối cùng trong widget, giúp code dễ đọc.
+    avoid_unnecessary_containers: true  # Tránh dùng Container thừa khi không cần thiết, giúp code gọn.
+    require_trailing_commas: true       # Bắt buộc dấu phẩy cuối cùng trong danh sách tham số, giúp format code đẹp hơn.
+    prefer_single_quotes: false          # Dùng dấu nháy đơn '' thay vì nháy kép "", giúp code nhất quán.
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 

@@ -862,7 +862,7 @@ packages:
     source: hosted
     version: "3.3.1"
   lucide_icons_flutter:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: lucide_icons_flutter
       sha256: "68d4082b26ea1a89f4431eb44642a47748a5931cdf88323100064180482a1f51"
@@ -1363,7 +1363,7 @@ packages:
     source: hosted
     version: "0.10.1"
   two_dimensional_scrollables:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: two_dimensional_scrollables
       sha256: "0f77ecb96596f2f82eec2b0a8e60d9305c58315557da9fa3b610c7dbf5ded621"
@@ -1379,7 +1379,7 @@ packages:
     source: hosted
     version: "1.4.0"
   universal_image:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: universal_image
       sha256: ef47a4a002158cf0b36ed3b7605af132d2476cc42703e41b8067d3603705c40d

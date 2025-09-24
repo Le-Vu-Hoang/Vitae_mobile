@@ -15,6 +15,12 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Dev setup
+
+1) Install FVM: `dart pub global activate fvm`
+2) `fvm install` then `fvm use`
+3) `fvm flutter pub get`
+4) `Run: `fvm flutter run`
 
 ```
 lib/
